@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Flex Iron</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+  </head>
+  <body>
+    <header>
+      <div class="marquee">
+        <p><span>Flex your Limits, Join the Revolution</span></p>
+      </div>
+      <nav class="navbar navbar-expand-lg py-3" data-bs-theme="dark" .>
+        <div class="container">
+          <a class="navbar-brand" href="/home.html"
+            ><img src="/assets/logo.png" alt="flexiron gym logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-evenly ms-lg-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/unisex-vikroli.html"
+                  >Unisex Vikhroli</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/women-only-vikroli.html"
+                  >Only Women's Vikhroli</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/unisex-thane.html">Unisex Thane</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <img
+          src="/assets/banners/contact-banner-web.jpg"
+          alt="flex iron gym contact banner"
+          class="d-none d-md-block"
+        />
+        <img
+          src="/assets/banners/contact-banner-mob.png"
+          alt="flex iron gym contact banner"
+          class="d-md-none"
+        />
+      </section>
+
+      <section class="py-4 py-md-5" #locations>
+        <div class="container">
+          <h2>CONNECT WITH FLEX</h2>
+          <p class="mb-4">We would love to hear from you!</p>
+          <p class="timings-text mb-4">
+            Where every hour is happy hour for your muscles. Open daily till
+            midnight because who needs sleep when you can flex?
+          </p>
+          <p class="timings">Timings: Monday to Sunday</p>
+          <p class="timings mb-4">6AM - 12AM</p>
+
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="form-floating mb-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nameInput"
+                    placeholder="Full name"
+                    name="Full Name"
+                    maxlength="50"
+                    required
+                  />
+                  <label for="nameInput">Full name</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailInput"
+                    placeholder="Full name"
+                    maxlength="50"
+                    name="Email"
+                    required
+                  />
+                  <label for="emailInput">Email</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <textarea
+                    class="form-control"
+                    placeholder="Message"
+                    id="messageInput"
+                    style="height: 150px"
+                    maxlength="250"
+                    name="Message"
+                    required
+                  ></textarea>
+                  <label for="messageInput">Message</label>
+                </div>
+
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="e9eccfe5-adcb-4f31-9a74-544c8a7196e6"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
+                <input type="hidden" name="subject" value="New Enquiry from Website">
+                <input type="hidden" name="from_name" value="Flex Iron Gym">
+                <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thank-you.html">
+                <button type="submit">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-4 py-md-5" id="locations">
+        <div class="container">
+          <h2>MAPPING OUT FLEX</h2>
+          <p class="mb-5">Pinned your favourite Flexing Spots</p>
+          <div class="location-wrapper mb-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.96639885301!2d72.92156527580687!3d19.109129950930456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7abc1090427%3A0xd9b3dd62bb0d5b1e!2sFlex%20Iron%20Gym!5e0!3m2!1sen!2sin!4v1730022510502!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p class="location">Flex Iron Unisex Gym, Vikhroli</p>
+            <address class="address my-2">
+              Mahajan Mills Compound, Lal Bahadur Shastri Marg, HMPL Surya
+              Nagar, Vikhroli West, Mumbai, Maharashtra 400079
+            </address>
+            <p class="contact">
+              <a href="tel:+91-8655960234">+91 86559 60234</a>
+            </p>
+          </div>
+          <div class="location-wrapper mb-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.96639885301!2d72.92156527580687!3d19.109129950930456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7abc1090427%3A0xd9b3dd62bb0d5b1e!2sFlex%20Iron%20Gym!5e0!3m2!1sen!2sin!4v1730022510502!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p class="location">Flex Iron Women Only Gym, Vikhroli</p>
+            <address class="address my-2">
+              Mahajan Mills Compound, Lal Bahadur Shastri Marg, HMPL Surya
+              Nagar, Vikhroli West, Mumbai, Maharashtra 400079
+            </address>
+            <p class="contact">
+              <a href="tel:+91-8850409572">+91 88504 09572</a>
+            </p>
+          </div>
+          <div class="location-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.9562382067193!2d72.95929827580831!3d19.197113648158062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b97d799f7e27%3A0x42c4cd29002a2de8!2sFlex%20Iron%20Gym!5e0!3m2!1sen!2sin!4v1730044928152!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p class="location">Flex Iron Unisex Gym, Thane</p>
+            <address class="address my-2">
+              1st Floor, Flex Iron Gym, Shahid Mangal Pandey Rd, above ZERO
+              DEGREE AUTO - Car AC Service, opposite Riddhi Siddhi Complex,
+              Louis Wadi, Thane West, Mumbai, Thane, Maharashtra 400604
+            </address>
+            <p class="contact">
+              <a href="tel:+91-9967596672">+91 99675 96672</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 py-md-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-6 col-md-3">
+            <p>Flex Iron</p>
+            <nav>
+              <ul>
+                <li><a href="/home.html#our-team">Our Team</a></li>
+                <li><a href="/unisex-vikroli.html#services">Services</a></li>
+                <li>
+                  <a href="/unisex-vikroli.html#memberships">Membership</a>
+                </li>
+                <li><a href="/unisex-vikroli.html#offers">Offers</a></li>
+                <li><a href="/home.html#clients">Our Clients</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 col-md-3">
+            <p>Our Gyms</p>
+            <nav>
+              <ul>
+                <li><a href="/unisex-vikroli.html">Unisex, Vikhroli</a></li>
+                <li>
+                  <a href="/women-only-vikroli.html">Women Only, Vikhroli</a>
+                </li>
+                <li><a href="/unisex-thane.html">Unisex, Thane</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 col-md-3">
+            <p>Contact Us</p>
+            <nav>
+              <ul>
+                <li><a href="/contact-us.html#locations">Locations</a></li>
+                <li><a href="mailto:abc@example.com">Email</a></li>
+                <li>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=918655960234"
+                    target="_blank"
+                    >Whatsapp</a
+                  >
+                </li>
+                <li><a href="tel:+91-8655960234">Call Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 col-md-3">
+            <p>Connect</p>
+            <input type="text" placeholder="Enter your email" />
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

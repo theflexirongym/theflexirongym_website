@@ -1,0 +1,190 @@
+.gym-interiors .img-wrapper {
+  display: block;
+  aspect-ratio: 1;
+  border: 3px solid #fff;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.gym-interiors .img-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fefe00;
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  z-index: -1;
+}
+.gym-interiors .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gym-interiors .gym-location {
+  display: block;
+  margin-top: 24px;
+  color: #fff;
+}
+.gym-interiors .gym-location p {
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+}
+
+.trainers .img-wrapper {
+  display: block;
+  aspect-ratio: 1.1;
+  border: 3px solid #fff;
+  position: relative;
+}
+.trainers .img-wrapper.left-wrapper,
+.trainers .img-wrapper.left-wrapper img {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+.trainers .img-wrapper.right-wrapper,
+.trainers .img-wrapper.right-wrapper img {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+.trainers .img-wrapper.left-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  background-color: #fefe00;
+  position: absolute;
+  left: -1.5%;
+  top: -1.5%;
+  z-index: -1;
+}
+.trainers .img-wrapper.right-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: #fefe00;
+  position: absolute;
+  right: -1.5%;
+  bottom: -1.5%;
+  z-index: -1;
+}
+.trainers .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.crosses {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.75rem;
+}
+.crosses img {
+  width: 80%;
+}
+.wonders .img-wrapper {
+  aspect-ratio: 0.9;
+  border: 3px solid #fff;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.wonders .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wonders .img-wrapper .section-name-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #000000b6, #000000cc);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.wonders .img-wrapper .section-name-wrapper p {
+  font-size: 24px;
+  color: #fefe00;
+  /* text-shadow: #ffffffc5 2px 2px 3px; */
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+.highlight-banner-section {
+  background-image: url(/assets/banners/home-banner-two-web.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  aspect-ratio: 1920 / 500;
+}
+.testimonials .img-wrapper {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+.testimonials .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials p {
+  color: #fff;
+  text-align: center;
+}
+.testimonials .testimonial-name {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fefe00;
+}
+@media screen and (max-width: 1399px) {
+  .wonders .img-wrapper .section-name-wrapper p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gym-interiors .img-wrapper {
+    width: 80%;
+  }
+  .trainers .img-wrapper.left-wrapper::after {
+    left: -3%;
+    top: -3%;
+  }
+  .trainers .img-wrapper.right-wrapper::after {
+    right: -3%;
+    bottom: -3%;
+  }
+  .wonders .img-wrapper .section-name-wrapper p {
+    font-size: 18px;
+  }
+  .testimonials {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .highlight-banner-section {
+    background-image: url(/assets/banners/home-banner-two-mob.png);
+    aspect-ratio: 390 / 500;
+  }
+  .gym-interiors .gym-location p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (hover: hover) {
+  .wonders .img-wrapper img {
+    transition: all 0.8s ease;
+  }
+  .wonders .img-wrapper img:hover {
+    transform-origin: center center;
+    transform: scale(1.05);
+  }
+}
