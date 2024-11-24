@@ -83,7 +83,7 @@ footer input {
 footer input:focus-visible {
   outline: none;
 }
-footer button {
+footer .contact-btn {
   display: block;
   width: 100%;
   height: 36px;
